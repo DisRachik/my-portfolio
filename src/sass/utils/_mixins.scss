@@ -1,0 +1,23 @@
+@mixin font($size, $height) {
+	font-size: $size;
+	line-height: $height;
+}
+
+@mixin beforeCircle($size: #{$circle-huge}) {
+	position: relative;
+	z-index: 2;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		z-index: -1;
+
+		width: $size;
+		height: $size;
+
+		background-color: getColor("accent");
+		border-radius: 50%;
+	}
+}

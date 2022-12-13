@@ -1,0 +1,4 @@
+.decoration-circle {
+	@include beforeCircle;
+	text-indent: 10px;
+}

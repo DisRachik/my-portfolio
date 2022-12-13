@@ -1,0 +1,12 @@
+$colors: (
+	"accent": #ffa501,
+	"light": #ffffff,
+
+	"bg-reserved": #212121,
+);
+@function getColor($key) {
+	@return map-get($colors, $key);
+}
+
+$circle-huge: 36px;
+$circle-tiny: 15px;

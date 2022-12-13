@@ -1,0 +1,30 @@
+.sidepanel {
+	position: absolute;
+	top: 230px;
+	left: 50px;
+	z-index: 3;
+
+	display: flex;
+	align-items: center;
+	gap: 15px;
+
+	color: getColor("light");
+
+	transform: rotate(-90deg) translateX(-100%);
+	transform-origin: top left;
+}
+
+.sidepanel__line {
+	width: 70px;
+
+	border: 2px solid getColor("light");
+}
+
+.sidepanel__social {
+	display: flex;
+	gap: 15px;
+}
+
+.sidepanel__link {
+	fill: getColor("light");
+}

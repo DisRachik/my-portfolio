@@ -1,0 +1,19 @@
+.title {
+	font-weight: 700;
+	@include font(36px, 1.67);
+
+	// Block title
+	&--fz14 {
+		@include font(14px, 1.5);
+	}
+
+	// First title section
+	&--fz16 {
+		@include font(16px, 1.5);
+	}
+
+	// Site title
+	&--fz48 {
+		font-size: 48px;
+	}
+}
