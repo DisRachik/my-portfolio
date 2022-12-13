@@ -11,20 +11,20 @@
 	// Властивість для всіх браузерів
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		image-set(
-			url("../img/main_bg@2x.webp") type("image/webp") 2x,
-			url("../img/main_bg.webp") type("image/webp") 1x,
-			url("../img/main_bg@2x.jpg") type("image/jpeg") 2x,
-			url("../img/main_bg.jpg") type("image/jpeg") 1x
+			url("../img/main_bg@2x.webp") 2x,
+			url("../img/main_bg.webp") 1x,
+			url("../img/main_bg@2x.jpg") 2x,
+			url("../img/main_bg.jpg") 1x
 		);
 	// Властивість саме для Хрому
-	background-image: -webkit-gradient(
-			linear,
-			left top,
-			right top,
-			from(rgba(47, 48, 58, 0.4)),
-			to(rgba(47, 48, 58, 0.4))
-		),
-		-webkit-image-set(url("../img/main_bg@2x.webp") 2x, url("../img/main_bg.webp") 1x);
+	// background-image: -webkit-gradient(
+	// 		linear,
+	// 		left top,
+	// 		right top,
+	// 		from(rgba(47, 48, 58, 0.4)),
+	// 		to(rgba(47, 48, 58, 0.4))
+	// 	),
+	// 	-webkit-image-set(url("../img/main_bg@2x.webp") 2x, url("../img/main_bg.webp") 1x);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
