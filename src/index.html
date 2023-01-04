@@ -120,8 +120,106 @@
 			</ul>
 		</aside>
 
+		<!-- Site-menu -->
+		<div class="menu" id="site-menu">
+			<div class="menu__block">
+				<!-- Close site-menu -->
+				<button class="menu__close" type="button" aria-label="to close the site-menu">
+					<svg class="menu__icon-close" width="29" height="29">
+						<use href="./icons/icon-sprite.svg#close"></use>
+					</svg>
+				</button>
+				<!-- menu -->
+				<nav>
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#" class="menu__link">ABOUT ME</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">MY EXPERIENCE</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">MY SKILLS</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">MY WORKS</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">PRICE LIST</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">CONTACTS</a></li>
+					</ul>
+				</nav>
+
+				<!-- Social-list -->
+				<ul class="sidepanel__social sidepanel__social--center">
+					<li class="sidepanel__item">
+						<a
+							href="https://github.com/DisRachik"
+							class="sidepanel__link"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="GitHub icon"
+						>
+							<svg class="sidepanel__icon" width="20" height="20">
+								<use href="./icons/icon-sprite.svg#github"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="sidepanel__item">
+						<a
+							href="https://www.instagram.com/disrachik/"
+							class="sidepanel__link"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Instagram icon"
+						>
+							<svg class="sidepanel__icon" width="20" height="20">
+								<use href="./icons/icon-sprite.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="sidepanel__item">
+						<a
+							href="https://www.facebook.com/igor.radchenko.9"
+							class="sidepanel__link"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Facebook icon"
+						>
+							<svg class="sidepanel__icon" width="20" height="20">
+								<use href="./icons/icon-sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="sidepanel__item">
+						<a
+							href="https://www.linkedin.com/in/igor-radchenko-441181a2/"
+							class="sidepanel__link"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="LinkedIn icon"
+						>
+							<svg class="sidepanel__icon" width="20" height="20">
+								<use href="./icons/icon-sprite.svg#linkedin-in"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Overlay -->
+			<div class="menu__overlay"></div>
+		</div>
+
 		<!-- Promo -->
 		<section class="promo">
+			<!-- Open site-menu -->
+			<button
+				class="hamburger"
+				type="button"
+				aria-label="to open the site-menu"
+				aria-controls="site-menu"
+				aria-expanded="false"
+			>
+				<span class="hamburger__line"></span>
+				<span class="hamburger__line hamburger__line--long"></span>
+				<span class="hamburger__line"></span>
+			</button>
+
 			<div class="container">
 				<p class="title title--fz16 decoration-circle">My name is Ihor Radchenko</p>
 				<h1 class="title title--fz48 promo__title">I am a web developer from Kyiv</h1>

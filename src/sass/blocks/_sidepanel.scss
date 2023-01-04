@@ -23,8 +23,11 @@
 .sidepanel__social {
 	display: flex;
 	gap: 15px;
+	&--center {
+		justify-content: center;
+	}
 }
 
 .sidepanel__link {
-	fill: getColor("light");
+	fill: currentColor;
 }

@@ -21,3 +21,10 @@
 		border-radius: 50%;
 	}
 }
+
+// A mixin for transitions or opacity animation
+@mixin animated($property...) {
+	transition-property: $property;
+	transition-duration: 600ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
