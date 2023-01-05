@@ -1,4 +1,34 @@
 .decoration-circle {
 	@include beforeCircle;
 	text-indent: 10px;
+
+	&--img {
+		height: 36px;
+		&::before {
+			top: 0;
+			transform: translate(0);
+		}
+	}
+	&__icon {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		display: flex;
+		margin-bottom: -4px;
+	}
+}
+
+.divider {
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin-top: 25px;
+
+	background-color: getColor("accent");
+	border-radius: 5px;
+
+	&--non-backdown {
+		margin-top: 0;
+	}
 }

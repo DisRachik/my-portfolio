@@ -1,5 +1,5 @@
 .sidepanel {
-	position: absolute;
+	position: fixed;
 	top: 230px;
 	left: 50px;
 	z-index: 3;
@@ -8,7 +8,7 @@
 	align-items: center;
 	gap: 15px;
 
-	color: getColor("light");
+	color: getColor("accent");
 
 	transform: rotate(-90deg) translateX(-100%);
 	transform-origin: top left;
@@ -17,7 +17,7 @@
 .sidepanel__line {
 	width: 70px;
 
-	border: 2px solid getColor("light");
+	border: 2px solid getColor("accent");
 }
 
 .sidepanel__social {
