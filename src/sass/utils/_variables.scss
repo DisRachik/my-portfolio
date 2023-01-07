@@ -4,6 +4,7 @@ $colors: (
 	"dark": #151812,
 
 	"bg-reserved": #212121,
+	"skills-scale": #e8e4de,
 );
 @function getColor($key) {
 	@return map-get($colors, $key);
