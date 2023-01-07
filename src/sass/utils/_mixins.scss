@@ -6,6 +6,7 @@
 @mixin beforeCircle($size: #{$circle-huge}) {
 	position: relative;
 	z-index: 2;
+
 	&::before {
 		content: "";
 		position: absolute;

@@ -1,24 +1,27 @@
+// Title section
 .title {
 	font-weight: 700;
-	@include font(36px, 1.67);
 
 	// Block title
 	&--fz14 {
-		@include font(14px, 1.5);
+		font-size: 14px;
 	}
 
 	// First title section
 	&--fz16 {
-		@include font(16px, 1.5);
+		font-size: 16px;
 	}
 
-	// Title section
+	// Title block in section Resume
+	&--fz20 {
+		font-size: 20px;
+	}
 	&--fz36 {
-		font-size: 36px;
+		@include font(36px, 1.67);
 	}
 
 	// Site title
 	&--fz48 {
-		font-size: 48px;
+		@include font(48px, 1.67);
 	}
 }

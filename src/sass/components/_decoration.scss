@@ -1,14 +1,28 @@
+// Decorative circle
 .decoration-circle {
 	@include beforeCircle;
+
+	flex-shrink: 0;
+
 	text-indent: 10px;
 
+	&--center {
+		text-indent: inherit;
+		&::before {
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
 	&--img {
+		width: 36px;
 		height: 36px;
 		&::before {
 			top: 0;
 			transform: translate(0);
 		}
 	}
+
 	&__icon {
 		position: absolute;
 		right: 0;
@@ -18,7 +32,11 @@
 		margin-bottom: -4px;
 	}
 }
+.decoration-circle--small {
+	@include beforeCircle($circle-tiny);
+}
 
+// Decorative line
 .divider {
 	display: block;
 	width: 60px;
@@ -30,5 +48,10 @@
 
 	&--non-backdown {
 		margin-top: 0;
+	}
+
+	&--center {
+		margin-right: auto;
+		margin-left: auto;
 	}
 }

@@ -5,10 +5,22 @@ body {
 
 .section {
 	padding-top: 120px;
+	text-align: center;
+
+	&--left {
+		text-align: start;
+	}
 }
 .container {
+	outline: 1px solid tomato;
+
 	max-width: 1170px;
 	margin: 0 auto;
+	padding-top: 6px;
 	padding-right: 15px;
 	padding-left: 15px;
+
+	&--non-backdown {
+		padding-top: 0;
+	}
 }
