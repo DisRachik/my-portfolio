@@ -60,6 +60,7 @@
 	border-radius: 4px;
 }
 .skills__scale-progress {
+	display: block;
 	height: 100%;
 
 	background-color: getColor("accent");
