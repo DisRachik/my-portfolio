@@ -1,0 +1,29 @@
+.price {
+	margin-top: 60px;
+	padding: 0 35px;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 15px;
+
+	text-align: left;
+}
+
+.price__item {
+	flex-basis: 34%;
+}
+
+.price__title {
+	padding-left: 25px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.price__text {
+	margin-top: 5px;
+	padding-left: 25px;
+
+	font-size: 12px;
+}
