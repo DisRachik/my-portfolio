@@ -1,0 +1,34 @@
+.portfolio {
+	margin-top: 60px;
+
+	display: grid;
+	grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+	grid-auto-rows: 1fr;
+	gap: 5px;
+}
+
+.portfolio__link {
+	filter: grayscale(60%);
+
+	@include animated(filter);
+	img {
+		@include animated(transform);
+	}
+
+	&:hover,
+	&:focus {
+		filter: grayscale(0);
+		img {
+			transform: scale(1.02);
+		}
+	}
+}
+
+.portfolio__item--vertical {
+	grid-row: 1 / 3;
+	grid-column: 4 / 5;
+}
+.portfolio__item--horizontal {
+	grid-row: 2 / 3;
+	grid-column: 2/4;
+}

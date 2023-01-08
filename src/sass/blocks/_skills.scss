@@ -58,11 +58,13 @@
 
 	background-color: getColor("skills-scale");
 	border-radius: 4px;
+	box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
 }
 .skills__scale-progress {
 	display: block;
 	height: 100%;
 
-	background-color: getColor("accent");
+	background: linear-gradient(to right, #ffb88f, #ea5853);
 	border-radius: 4px;
+	box-shadow: inset -5px -5px 9px rgba(94, 104, 121, 0.3), inset 5px 5px 9px rgba(255, 255, 255, 0.45);
 }
