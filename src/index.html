@@ -65,7 +65,7 @@
 				<li class="sidepanel__item">
 					<a
 						href="https://github.com/DisRachik"
-						class="sidepanel__link"
+						class="sidepanel__link github"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="GitHub icon"
@@ -79,7 +79,7 @@
 				<li class="sidepanel__item">
 					<a
 						href="https://www.instagram.com/disrachik/"
-						class="sidepanel__link"
+						class="sidepanel__link instagram"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Instagram icon"
@@ -93,7 +93,7 @@
 				<li class="sidepanel__item">
 					<a
 						href="https://www.facebook.com/igor.radchenko.9"
-						class="sidepanel__link"
+						class="sidepanel__link facebook"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="Facebook icon"
@@ -107,7 +107,7 @@
 				<li class="sidepanel__item">
 					<a
 						href="https://www.linkedin.com/in/ihor-radchenko/"
-						class="sidepanel__link"
+						class="sidepanel__link linkedin-in"
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label="LinkedIn icon"
@@ -132,12 +132,12 @@
 				<!-- menu -->
 				<nav>
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link">ABOUT ME</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">MY EXPERIENCE</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">MY SKILLS</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">MY WORKS</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">PRICE LIST</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">CONTACTS</a></li>
+						<li class="menu__item"><a href="#about" class="menu__link">ABOUT ME</a></li>
+						<li class="menu__item"><a href="#resume" class="menu__link">MY EXPERIENCE</a></li>
+						<li class="menu__item"><a href="#skills" class="menu__link">MY SKILLS</a></li>
+						<li class="menu__item"><a href="#portfolio" class="menu__link">MY WORKS</a></li>
+						<li class="menu__item"><a href="#price" class="menu__link">PRICE LIST</a></li>
+						<li class="menu__item"><a href="#contacts" class="menu__link">CONTACTS</a></li>
 					</ul>
 				</nav>
 
@@ -146,7 +146,7 @@
 					<li class="sidepanel__item">
 						<a
 							href="https://github.com/DisRachik"
-							class="sidepanel__link"
+							class="sidepanel__link github"
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="GitHub icon"
@@ -160,7 +160,7 @@
 					<li class="sidepanel__item">
 						<a
 							href="https://www.instagram.com/disrachik/"
-							class="sidepanel__link"
+							class="sidepanel__link instagram"
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Instagram icon"
@@ -174,7 +174,7 @@
 					<li class="sidepanel__item">
 						<a
 							href="https://www.facebook.com/igor.radchenko.9"
-							class="sidepanel__link"
+							class="sidepanel__link facebook"
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Facebook icon"
@@ -185,7 +185,7 @@
 						</a>
 					</li>
 
-					<li class="sidepanel__item">
+					<li class="sidepanel__item linkedin-in">
 						<a
 							href="https://www.linkedin.com/in/ihor-radchenko/"
 							class="sidepanel__link"
@@ -224,14 +224,14 @@
 				<p class="title title--fz16 decoration-circle">My name is Ihor Radchenko</p>
 				<h1 class="title title--fz48 promo__title">I am a web developer from Kyiv</h1>
 				<ul class="promo__btns">
-					<li><a href="#" class="promo__link btn">Portfolio</a></li>
-					<li><a href="#" class="promo__link btn promo__link--transparent">About me</a></li>
+					<li><a href="#portfolio" class="promo__link btn">Portfolio</a></li>
+					<li><a href="#about" class="promo__link btn promo__link--transparent">About me</a></li>
 				</ul>
 			</div>
 		</section>
 
 		<!-- About me -->
-		<section class="section section--left">
+		<section class="section section--left" id="about">
 			<div class="container container--non-backdown">
 				<div class="about">
 					<picture class="about__foto">
@@ -261,7 +261,7 @@
 					</picture>
 
 					<div class="about__descr">
-						<h2 class="title title--fz16 decoration-circle about__title">About me</h2>
+						<h2 class="title title--fz16 decoration-circle">About me</h2>
 						<p class="title title--fz36 about__subtitle">My name is Ihor</p>
 						<span class="divider divider--non-backdown"></span>
 						<p class="about__text">
@@ -339,7 +339,7 @@
 		</section>
 
 		<!-- Resume -->
-		<section class="section">
+		<section class="section" id="resume">
 			<div class="container">
 				<h2 class="title title--fz16 decoration-circle decoration-circle--center">Experience</h2>
 				<p class="title title--fz36">I can be helpful to you</p>
@@ -449,7 +449,7 @@
 		</section>
 
 		<!-- Work skills -->
-		<section class="section">
+		<section class="section" id="skills">
 			<div class="container">
 				<h2 class="title title--fz16 decoration-circle decoration-circle--center">Work skills</h2>
 				<p class="title title--fz36">I use in my work</p>
@@ -580,7 +580,7 @@
 		</section>
 
 		<!-- Portfolio -->
-		<section class="section">
+		<section class="section" id="portfolio">
 			<div class="container">
 				<h2 class="title title--fz16 decoration-circle decoration-circle--center">Portfolio</h2>
 				<p class="title title--fz36">My works</p>
@@ -745,7 +745,8 @@
 			</div>
 		</section>
 
-		<section class="section">
+		<!-- Price list -->
+		<section class="section" id="price">
 			<div class="container">
 				<h2 class="title title--fz16 decoration-circle decoration-circle--center">Price list</h2>
 				<span class="divider divider--center"></span>
@@ -773,6 +774,190 @@
 						<p class="price__text">A tool for your online sales</p>
 					</li>
 				</ul>
+			</div>
+		</section>
+
+		<!-- Contacts -->
+		<section class="section section--left section--bottom-indent" id="contacts">
+			<div class="container container--non-backdown">
+				<div class="contacts">
+					<picture class="contacts__foto">
+						<source
+							srcset="./img/main_photo_mob.webp 1x, ./img/main_photo_mob@2x.webp 2x"
+							type="image/webp"
+							media="(max-width: 479.98px)"
+						/>
+						<source
+							srcset="./img/main_photo_mob.jpg 1x, ./img/main_photo_mob@2x.jpg 2x"
+							type="image/jpeg"
+							media="(max-width: 479.98px)"
+						/>
+
+						<source
+							srcset="./img/main_photo.webp 1x, ./img/main_photo@2x.webp 2x"
+							type="image/webp"
+							media="(min-width: 480px)"
+						/>
+						<source
+							srcset="./img/main_photo.jpg 1x, ./img/main_photo@2x.jpg 2x"
+							type="image/jpeg"
+							media="(min-width: 480px)"
+						/>
+
+						<img src="main_photo.jpg" alt="foto web developer" width="400" height="600" loading="lazy" />
+					</picture>
+					<div class="contacts__content">
+						<h2 class="title title--fz16 decoration-circle">Contacts</h2>
+						<p class="title title--fz36 contacts__subtitle">Contact me</p>
+						<span class="divider divider--non-backdown"></span>
+						<p class="title title--fz14 contacts__text">In any way convenient for you:</p>
+
+						<!-- Contacts social -->
+						<ul class="contacts__social">
+							<li class="contacts__item">
+								<a
+									href="https://www.facebook.com/igor.radchenko.9"
+									class="contacts__link facebook"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Facebook"
+								>
+									<svg class="contacts__icon" width="30" height="30">
+										<use href="./icons/icon-sprite.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a
+									href="https://www.instagram.com/disrachik/"
+									class="contacts__link instagram"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Instagram"
+								>
+									<svg class="contacts__icon" width="30" height="30">
+										<use href="./icons/icon-sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a
+									href="https://www.linkedin.com/in/ihor-radchenko/"
+									class="contacts__link linkedin-in"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="LinkedinIn"
+								>
+									<svg class="contacts__icon" width="30" height="30">
+										<use href="./icons/icon-sprite.svg#linkedin-in"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a
+									href="https://t.me/IhorRachik"
+									class="contacts__link telegram"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Telegram"
+								>
+									<svg class="contacts__icon" width="30" height="30">
+										<use href="./icons/icon-sprite.svg#telegram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a
+									href="https://wa.me/380683553596"
+									class="contacts__link whatsapp"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="WhatsApp"
+								>
+									<svg class="contacts__icon" width="30" height="30">
+										<use href="./icons/icon-sprite.svg#whatsapp"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a
+									href="https://msng.link/o/?380683553596=vi"
+									class="contacts__link viber"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Viber"
+								>
+									<svg class="contacts__icon" width="30" height="30">
+										<use href="./icons/icon-sprite.svg#viber"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="contacts__item">
+								<a
+									href="https://discordapp.com/users/971828003745198150/"
+									class="contacts__link discord"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Discord"
+								>
+									<svg class="contacts__icon" width="30" height="30">
+										<use href="./icons/icon-sprite.svg#discord"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+						<p class="title title--fz14 contacts__text">Or leave your details and I will write to you myself:</p>
+
+						<!-- Form -->
+						<form class="contacts__form" name="callback">
+							<label class="contacts__label">
+								<input
+									class="contacts__input"
+									type="text"
+									name="callback-name"
+									required
+									minlength="3"
+									required
+									pattern="^[a-zA-Z\s]+$"
+									title="The name must consist of only letters, also can use a space."
+									placeholder=" "
+								/>
+								<span class="contacts__name">Your name</span>
+							</label>
+							<label class="contacts__label">
+								<input class="contacts__input" type="email" name="callback-mail" required placeholder=" " />
+								<span class="contacts__name">Your email</span>
+							</label>
+							<label class="contacts__label contacts__label--long">
+								<textarea
+									class="contacts__textarea"
+									name="callback-comment"
+									rows="5"
+									required
+									placeholder="Describe your question briefly."
+								></textarea>
+								<span class="contacts__name">Your message</span>
+							</label>
+
+							<!-- Feedback form (checkbox) -->
+							<label class="contacts__consent contacts__label--long">
+								<input class="contacts__check" type="checkbox" name="agreement" required />
+								<svg class="contacts__icon-check" width="16" height="15">
+									<use href="./icons/icon-sprite.svg#check"></use>
+								</svg>
+								<span class="contacts__policy">
+									I agree with
+									<a class="contacts__link--form" href="#">the privacy policy</a>
+								</span>
+							</label>
+
+							<div>
+								<button class="btn contacts__btn" type="submit"><span>Send message</span></button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</section>
 

@@ -1,0 +1,203 @@
+.contacts {
+	padding-right: 20px;
+	padding-left: 35px;
+
+	display: grid;
+	grid-template-columns: 400px 585px;
+	justify-content: space-between;
+}
+
+.contacts__content {
+	@extend .about__descr;
+}
+.contacts__subtitle {
+	@extend .about__subtitle;
+}
+.contacts__text {
+	margin-top: 20px;
+}
+
+// Social panel
+.contacts__social {
+	margin-top: 20px;
+
+	display: flex;
+	gap: 25px;
+
+	@extend %inner-shadow;
+}
+
+.contacts__link {
+	color: getColor("dark");
+
+	@include animated(color);
+}
+
+.contacts__icon {
+	fill: currentColor;
+}
+
+// Form
+.contacts__form {
+	margin-top: 30px;
+
+	display: grid;
+	grid-template: 45px 190px 26px 45px / repeat(2, 280px);
+	gap: 25px;
+}
+
+.contacts__label {
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+
+	&--long {
+		grid-column: 1 / 3;
+	}
+}
+
+.contacts__name {
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+	left: 12px;
+
+	padding-left: 5px;
+	padding-right: 5px;
+
+	font-size: 12px;
+	background: linear-gradient(to bottom, transparent 8.5px, #d7d9dc 8.5px, #d7d9dc 9.5px, transparent);
+	border-radius: 50%;
+
+	@include animated(transform, color);
+}
+
+.contacts__input {
+	padding-left: 20px;
+	width: 100%;
+	height: 100%;
+
+	font-size: 12px;
+
+	background-color: transparent;
+	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 4px 8px rgba(0, 0, 0, 0.15), 0px 8px 16px rgba(0, 0, 0, 0.15),
+		0px 16px 32px rgba(0, 0, 0, 0.15);
+	border: 1px solid getColor("dark");
+	outline: none;
+
+	@include animated(border-color, box-shadow);
+
+	&::placeholder {
+		font-size: 12px;
+		color: rgb(21, 24, 18, 0.5);
+	}
+
+	&:focus {
+		border-color: getColor("accent");
+		box-shadow: inset 0px 0px 0px 1px rgba(255, 165, 1, 0.15), inset 0px 4px 8px rgba(255, 165, 1, 0.15),
+			inset 0px 8px 16px rgba(255, 165, 1, 0.15), inset 0px 16px 32px rgba(255, 165, 1, 0.15);
+		& + .contacts__name {
+			transform: translateY(-100%);
+			background: transparent;
+
+			color: rgb(201, 135, 14);
+			@extend %inner-shadow;
+		}
+	}
+
+	&:not(:placeholder-shown):required:valid {
+		border-color: rgb(48, 219, 48);
+		box-shadow: inset 0px 0px 0px 1px rgba(48, 219, 48, 0.15), inset 0px 4px 8px rgba(48, 219, 48, 0.15),
+			inset 0px 8px 16px rgba(48, 219, 48, 0.15), inset 0px 16px 32px rgba(48, 219, 48, 0.15);
+
+		& + .contacts__name {
+			transform: translateY(-100%);
+			background: transparent;
+
+			color: rgb(4, 154, 4);
+			@extend %inner-shadow;
+		}
+	}
+
+	&:not(:placeholder-shown):required:invalid {
+		border-color: rgb(250, 107, 107);
+		box-shadow: inset 0px 0px 0px 1px rgba(250, 107, 107, 0.15), inset 0px 4px 8px rgba(250, 107, 107, 0.15),
+			inset 0px 8px 16px rgba(250, 107, 107, 0.15), inset 0px 16px 32px rgba(250, 107, 107, 0.15);
+
+		& + .contacts__name {
+			transform: translateY(-100%);
+			background: transparent;
+
+			color: rgb(214, 18, 18);
+			@extend %inner-shadow;
+		}
+	}
+}
+
+.contacts__textarea {
+	@extend .contacts__input;
+
+	padding-top: 10px;
+	resize: none;
+}
+
+.contacts__btn {
+	&:hover,
+	&:focus {
+		box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
+	}
+	&:active {
+		box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+		background-color: transparent;
+	}
+}
+
+// Feedback form (checkbox)
+.contacts__consent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+
+	cursor: pointer;
+}
+
+.contacts__check {
+	appearance: none;
+	position: absolute;
+
+	&:hover + .contacts__icon-check,
+	&:focus + .contacts__icon-check {
+		border-color: getColor("accent");
+	}
+
+	&:checked + .contacts__icon-check {
+		fill: getColor("light");
+		stroke: getColor("light");
+
+		background-color: getColor("accent");
+		border: none;
+	}
+}
+
+.contacts__icon-check {
+	fill: rgba(0, 0, 0, 0);
+
+	border: 2px solid getColor("dark");
+	border-radius: 2px;
+
+	@include animated(fill, background-color, border);
+}
+
+.contacts__policy {
+	font-size: 14px;
+}
+.contacts__link--form {
+	display: inline-block;
+	margin-left: 3px;
+
+	color: getColor("accent");
+
+	@include animated(color);
+}

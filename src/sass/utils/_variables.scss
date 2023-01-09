@@ -5,6 +5,8 @@ $colors: (
 
 	"bg-reserved": #212121,
 	"skills-scale": #e4fcea,
+
+	"hover": #0056b3,
 );
 @function getColor($key) {
 	@return map-get($colors, $key);
@@ -12,3 +14,7 @@ $colors: (
 
 $circle-huge: 36px;
 $circle-tiny: 15px;
+
+%inner-shadow {
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+}

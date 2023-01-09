@@ -41,7 +41,7 @@
 }
 
 .about__skills-text {
-	margin-top: 6px;
+	@extend .about__subtitle;
 
 	font-size: 12px;
 }

@@ -1,3 +1,6 @@
+* {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
@@ -12,10 +15,12 @@ body {
 	&--left {
 		text-align: start;
 	}
+
+	&--bottom-indent {
+		margin-bottom: 90px;
+	}
 }
 .container {
-	outline: 1px solid tomato;
-
 	max-width: 1170px;
 	margin: 0 auto;
 	padding-top: 6px;

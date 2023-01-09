@@ -35,4 +35,11 @@
 .promo__link--transparent {
 	background-color: transparent;
 	box-shadow: none;
+
+	@include animated(color);
+
+	&:hover,
+	&:focus {
+		color: getColor("accent");
+	}
 }
