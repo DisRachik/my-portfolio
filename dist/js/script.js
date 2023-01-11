@@ -35,6 +35,3 @@ $(window).scroll(function () {
 		$(".scroll-up").fadeOut();
 	}
 });
-
-
-function 
