@@ -3,18 +3,33 @@
 	position: fixed;
 	top: 20px;
 	right: 30px;
+	z-index: 2;
 
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: flex-end;
 
-	@extend %inner-shadow;
+	padding-right: 7px;
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+
+	@include animated(transform, box-shadow);
 
 	&:hover,
 	&:focus {
-		.hamburger__line {
+		transform: scale(1.1);
+		box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
+		& > .hamburger__line {
 			background-color: getColor("hover");
+
+			filter: none;
 		}
+	}
+	&:active {
+		box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
 	}
 }
 
@@ -24,8 +39,9 @@
 	height: 3px;
 
 	background-color: getColor("accent");
+	@extend %inner-shadow;
 
-	@include animated(background-color);
+	@include animated(background-color, filter);
 
 	&:not(:last-child) {
 		margin-bottom: 6px;
@@ -85,17 +101,33 @@
 	top: 25px;
 	right: 25px;
 
-	@extend %inner-shadow;
+	width: 50px;
+	height: 50px;
 
-	@include animated(color);
+	border-radius: 50%;
+
+	@include animated(color, transform, box-shadow);
 
 	&:hover,
 	&:focus {
 		color: getColor("hover");
+		transform: scale(1.1);
+		box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
+
+		& > .menu__icon-close {
+			filter: none;
+		}
+	}
+	&:active {
+		box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
 	}
 }
 .menu__icon-close {
+	margin: auto;
 	fill: currentColor;
+	@extend %inner-shadow;
+
+	@include animated(filter);
 }
 
 .menu__list {

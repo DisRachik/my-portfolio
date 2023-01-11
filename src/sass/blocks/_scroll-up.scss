@@ -1,0 +1,32 @@
+.scroll-up {
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+	z-index: 2;
+
+	display: block;
+
+	color: getColor("accent");
+	border-radius: 50%;
+
+	@include animated(transform, box-shadow, color);
+
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+		box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
+
+		& > .scroll-up__icon {
+			filter: none;
+		}
+	}
+	&:active {
+		box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+	}
+}
+.scroll-up__icon {
+	fill: currentColor;
+	@extend %inner-shadow;
+
+	@include animated(filter);
+}

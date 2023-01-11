@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Portfolio</title>
-		<meta name="title" content="My portfolio" />
+		<!-- Title -->
+		<meta name="title" content="Ihor Radchenko | Front End Developer" />
 		<meta name="description" content="Here you can see my work and learn more about me" />
 
 		<!-- Open Graph / Facebook -->
@@ -136,7 +137,7 @@
 						<li class="menu__item"><a href="#resume" class="menu__link">MY EXPERIENCE</a></li>
 						<li class="menu__item"><a href="#skills" class="menu__link">MY SKILLS</a></li>
 						<li class="menu__item"><a href="#portfolio" class="menu__link">MY WORKS</a></li>
-						<li class="menu__item"><a href="#price" class="menu__link">PRICE LIST</a></li>
+						<li class="menu__item menu__item--price"><a href="#price" class="menu__link">PRICE LIST</a></li>
 						<li class="menu__item"><a href="#contacts" class="menu__link">CONTACTS</a></li>
 					</ul>
 				</nav>
@@ -206,7 +207,7 @@
 		</div>
 
 		<!-- Promo -->
-		<section class="promo">
+		<section class="promo" id="up">
 			<!-- Open site-menu -->
 			<button
 				class="hamburger"
@@ -288,8 +289,9 @@
 							<div>
 								<h3 class="title title--fz14">Web development</h3>
 								<p class="about__skills-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-									dolore magna aliqua.
+									Let`s create successful responsive websites that are fast, easy to use, and built with best practices.
+									The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web
+									apps.
 								</p>
 							</div>
 						</li>
@@ -306,11 +308,8 @@
 								</svg>
 							</div>
 							<div>
-								<h3 class="title title--fz14">Application Development</h3>
-								<p class="about__skills-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-									dolore magna aliqua.
-								</p>
+								<h3 class="title title--fz14">Responsive</h3>
+								<p class="about__skills-text">My layouts will work on any device, big or small.</p>
 							</div>
 						</li>
 
@@ -328,8 +327,27 @@
 							<div>
 								<h3 class="title title--fz14">UI/UX Design</h3>
 								<p class="about__skills-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-									dolore magna aliqua.
+									Create a delightful user experience through your product`s visual language.
+								</p>
+							</div>
+						</li>
+
+						<li class="about__item">
+							<div class="decoration-circle decoration-circle--img">
+								<svg
+									class="decoration-circle__icon"
+									width="25"
+									height="25"
+									aria-label="A monitor displaying a set of design tools"
+								>
+									<use href="./icons/icon-sprite.svg#design"></use>
+								</svg>
+							</div>
+							<div>
+								<h3 class="title title--fz14">Search Engine Optimization</h3>
+								<p class="about__skills-text">
+									It`s free traffic to your website or you can say a reward from google for your rich and engaging
+									content. SEO is a magic hard to make. Don't worry We`ll do this!
 								</p>
 							</div>
 						</li>
@@ -513,8 +531,8 @@
 						</svg>
 						<h3 class="title title--fz14">Word Press</h3>
 						<p class="technologies__text">
-							An application that allows You to manage their sites and publish content without any programming
-							knowledge. You will be able to add and modify information on your site yourself.
+							A website is a place where people come to know more about you and your product or service. With WordPress
+							We not only create a website We create a great story together.
 						</p>
 					</li>
 				</ul>
@@ -746,7 +764,7 @@
 		</section>
 
 		<!-- Price list -->
-		<section class="section" id="price">
+		<section class="section section--prise" id="price">
 			<div class="container">
 				<h2 class="title title--fz16 decoration-circle decoration-circle--center">Price list</h2>
 				<span class="divider divider--center"></span>
@@ -947,8 +965,15 @@
 									<use href="./icons/icon-sprite.svg#check"></use>
 								</svg>
 								<span class="contacts__policy">
-									I agree with
-									<a class="contacts__link--form" href="#">the privacy policy</a>
+									I agree with the
+									<a
+										class="contacts__link--form"
+										href="https://www.freeprivacypolicy.com/live/60341af9-577a-446e-9eb7-e73a67e909aa"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										privacy policy
+									</a>
 								</span>
 							</label>
 
@@ -961,6 +986,19 @@
 			</div>
 		</section>
 
+		<!-- Scroll-up -->
+		<a href="#up" class="scroll-up" aria-label="button to return to the top of the page">
+			<svg class="scroll-up__icon" width="40" height="40">
+				<use href="./icons/icon-sprite.svg#scroll-up"></use>
+			</svg>
+		</a>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+			integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
